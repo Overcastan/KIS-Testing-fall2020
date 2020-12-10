@@ -1,0 +1,13 @@
+# Target labels
+ cpr_repo
+# Source files and their labels
+/home/overcastan/Desktop/Testing/TechProgTemplates/task5/build/CMakeFiles/cpr_repo
+/home/overcastan/Desktop/Testing/TechProgTemplates/task5/build/CMakeFiles/cpr_repo.rule
+/home/overcastan/Desktop/Testing/TechProgTemplates/task5/build/CMakeFiles/cpr_repo-complete.rule
+/home/overcastan/Desktop/Testing/TechProgTemplates/task5/build/cpr_repo-prefix/src/cpr_repo-stamp/cpr_repo-install.rule
+/home/overcastan/Desktop/Testing/TechProgTemplates/task5/build/cpr_repo-prefix/src/cpr_repo-stamp/cpr_repo-mkdir.rule
+/home/overcastan/Desktop/Testing/TechProgTemplates/task5/build/cpr_repo-prefix/src/cpr_repo-stamp/cpr_repo-download.rule
+/home/overcastan/Desktop/Testing/TechProgTemplates/task5/build/cpr_repo-prefix/src/cpr_repo-stamp/cpr_repo-update.rule
+/home/overcastan/Desktop/Testing/TechProgTemplates/task5/build/cpr_repo-prefix/src/cpr_repo-stamp/cpr_repo-patch.rule
+/home/overcastan/Desktop/Testing/TechProgTemplates/task5/build/cpr_repo-prefix/src/cpr_repo-stamp/cpr_repo-configure.rule
+/home/overcastan/Desktop/Testing/TechProgTemplates/task5/build/cpr_repo-prefix/src/cpr_repo-stamp/cpr_repo-build.rule
