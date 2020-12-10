@@ -5,6 +5,7 @@
 
 #include "TreeTestCase.h"
 #include "Tree.h"
+#include "boost/filesystem.hpp"
 
 #include <gtest/gtest.h>
 
@@ -17,11 +18,21 @@ TEST(Tree, not_directory) {
 }
 
 TEST(Tree, well_passed_files) {
-	ASSERT_NO_THROW(GetTree("src/02-tree", 0));
+	boost::filesystem::create_directory("tmpDir");
+	boost::filesystem::create_directory("tmpDir/tmp1");
+	boost::filesystem::create_directory("tmpDir/tmp2");
+	boost::filesystem::ofstream file("tmpDir/tmp1/foo");
+	file.close();
+	ASSERT_NO_THROW(GetTree("tmpDir", 0));
+	boost::filesystem::remove_all("tmpDir");
 }
 
-TEST(Tree, well_passed_no_dirs) {
-	ASSERT_NO_THROW(GetTree("src", 1));
+TEST(Tree, well_passed_no_files) {
+	boost::filesystem::create_directory("tmpDir");
+	boost::filesystem::create_directory("tmpDir/tmp1");
+	boost::filesystem::create_directory("tmpDir/tmp2");
+	ASSERT_NO_THROW(GetTree("tmpDir", 1));
+	boost::filesystem::remove_all("tmpDir");
 }
 
 TEST(Tree, equal) {
